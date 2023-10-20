@@ -1,0 +1,34 @@
+// For format details, see https://aka.ms/devcontainer.json
+{
+    // A name for the dev container displayed in the UI.
+    "name": "Python-dev-env",
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:Bookworm",
+    // Features to add to the dev container. More info: https://containers.dev/features
+    "features": {
+        //  Installs the Anaconda and Python 3.
+         "ghcr.io/devcontainers/features/anaconda:1": {"version":"latest"},
+         // Installs the GitHub CLI.
+         "ghcr.io/devcontainers/features/github-cli:1": {"version":"latest"}
+        },
+    // customizing supported tools and services. More info: https://containers.dev/supporting
+    "customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {},
+			"extensions": [
+                "ms-python.autopep8",
+                "streetsidesoftware.code-spell-checker",
+                "ms-python.python"
+            ]
+		}
+    },
+    // Setting minimum host requirements. More info: https://containers.dev/implementors/json_reference/#min-host-reqs
+    "hostRequirements": {
+        "cpus": 2,
+        "memory": "2gb",
+        "storage": "8gb",
+        "gpu": true
+    }
+}
