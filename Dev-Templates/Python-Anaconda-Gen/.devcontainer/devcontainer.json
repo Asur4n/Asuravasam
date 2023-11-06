@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json
 {
     // A name for the dev container displayed in the UI.
-    "name": "Python-dev-env",
+    "name": "Python-Anaconda-Gen",
     // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
     "image": "mcr.microsoft.com/vscode/devcontainers/base:Bookworm",
     // Features to add to the dev container. More info: https://containers.dev/features
